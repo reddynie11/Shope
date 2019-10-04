@@ -4,6 +4,8 @@ import './sign-in.styles.scss';
 
 import { Form, Button } from 'react-bootstrap';
 
+import { signInWithGoogle } from '../../firebase/firebase.utils';
+
 class SignIn extends React.Component{
     constructor(){
         super()
@@ -39,6 +41,7 @@ class SignIn extends React.Component{
                     </Form.Group>
 
                     <Button variant="dark" type="submit">Sign In</Button>
+                    <Button variant="dark" onClick={signInWithGoogle} >Sign In with Google</Button>
                 </Form>
             </div>
         )
