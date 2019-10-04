@@ -41,7 +41,7 @@ class SignIn extends React.Component{
                     </Form.Group>
 
                     <Button variant="dark" type="submit">Sign In</Button>
-                    <Button variant="light" onClick={signInWithGoogle} >Sign In with Google</Button>
+                    <Button className="ml-2" variant="primary" onClick={signInWithGoogle} >Sign In with Google</Button>
                 </Form>
             </div>
         )
