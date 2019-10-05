@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+import './sign-up.styles.scss';
 import { Form, Button } from 'react-bootstrap';
 
 import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
@@ -43,7 +43,7 @@ class SignUp extends React.Component{
     }
     render(){
         return(
-            <div className='sign-in'>
+            <div className='sign-up'>
                 <h2>Do not have an Account</h2>
                 <span>Sign Up with your email and password</span><hr/>
 
@@ -68,7 +68,7 @@ class SignUp extends React.Component{
                         <Form.Control name="confirmPassword" type="password" onChange={this.handleChange} value={this.state.confirmPassword} required placeholder="Password" />
                     </Form.Group>
 
-                    <Button variant="dark" type="submit">Sign In</Button>
+                    <Button variant="dark" type="submit">Sign Up</Button>
                 </Form>
             </div>
         )
