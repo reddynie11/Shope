@@ -1,5 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { Navbar, Nav} from 'react-bootstrap';
+
 import './header.styles.scss';
 import { auth } from '../../firebase/firebase.utils';
 
@@ -16,6 +18,7 @@ const Header = ({currentUser})=>{
                           : <Link className="option" to="/signin" >SIGN IN</Link>
                 }
             </div>
+           
         </div>
     )
 }

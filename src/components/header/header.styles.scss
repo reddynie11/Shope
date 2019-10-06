@@ -4,11 +4,15 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    background-color: #ED7C3D;
+    
+    
   
     .logo-container {
       height: 100%;
       width: 70px;
-      padding: 25px;
+      padding: 10px 40px;
+      color: white;
     }
 
     .logo{
@@ -22,10 +26,13 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+      padding: 10px 40px;
+      color: white;
   
       .option {
         padding: 10px 15px;
         cursor: pointer;
+        color: white;
       }
     }
   }
