@@ -6,8 +6,9 @@ import {Link} from 'react-router-dom';
 import './header.styles.scss';
 import { auth } from '../../firebase/firebase.utils';
 import CartIcon from '../cart-icon/cart-icon.component';
+import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 
-const Header = ({currentUser})=>{
+const Header = ({currentUser,hidden})=>{
     return(
         <div className='header'>
             <Link to='/' className='logo-container'>
@@ -21,14 +22,16 @@ const Header = ({currentUser})=>{
                 }
                 <CartIcon className='option' />
             </div>
+            { hidden ? null : <CartDropdown />  }
            
         </div>
     )
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({ user:{ currentUser}, cart:{hidden}  }) => {
     return ({
-        currentUser : state.user.currentUser
+        currentUser,
+        hidden
     })
 }
 
