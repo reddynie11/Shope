@@ -28,10 +28,10 @@ const Header = ({currentUser,hidden})=>{
     )
 }
 
-const mapStateToProps = ({ user:{ currentUser}, cart:{hidden}  }) => {
+const mapStateToProps = ( state ) => {
     return ({
-        currentUser,
-        hidden
+        currentUser : state.user.currentUser,
+        hidden: state.cart.hidden
     })
 }
 
