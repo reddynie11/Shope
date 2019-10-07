@@ -18,9 +18,10 @@ const CartIcon = ({ toggleCartHidden, itemCount})=>{
 
 const mapStatetoProps = (state)=>{
     return {
-        itemCount: state.cart.cartItems.reduce((accumlatedQty,item)=>{
-            return accumlatedQty + item.quantity
-        },0)
+        itemCount: state.cart.cartItems.reduce(
+            (accumlatedQty,item)=>{
+                return accumlatedQty + item.quantity
+            },0)
     }
 }
 
