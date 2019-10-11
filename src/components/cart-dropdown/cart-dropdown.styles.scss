@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    border: 1px solid #ED7C3D;
+    border: 2px solid #BC412B;
     background-color: white;
     top: 90px;
     right: 40px;
@@ -17,17 +17,18 @@
       flex-direction: column;
       overflow: scroll;
     }
-  
+  .empty-msg{
+    font-size: 18px;
+    margin: 80px auto;
+  }
     button {
       align-self: center;
       width: 150px;
       margin-top: auto;
-      background-color: #ED7C3D;
+      background-color: #BC412B;
       border: none;
     }
     button:hover{
-      background-color: white;
-      color: #ED7C3D;
-      border: 2px solid #ED7C3D;
+      background-color: #ED7C3D;
     }
   }
