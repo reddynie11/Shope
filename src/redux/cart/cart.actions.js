@@ -10,3 +10,9 @@ export const addItem = (item) => {
         payload: item
     }
 }
+export const clearItemfromCart = (item)=> {
+    return{
+        type: 'CLEAR_ITEM_FROM_CART',
+        payload: item
+    }
+}
